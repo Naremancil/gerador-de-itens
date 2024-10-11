@@ -1,0 +1,32 @@
+CREATE DATABASE express;
+USE express;
+
+CREATE TABLE IF NOT EXISTS weapon (
+    id BIGINT PRIMARY KEY AUTO_INCREMENT,
+    nome_item VARCHAR(255) NOT NULL,
+    tier INT NOT NULL,
+    tipo VARCHAR(255) NOT NULL,
+    dano INT NOT NULL,
+    efeito VARCHAR(255),
+    lore VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS protection (
+    id BIGINT PRIMARY KEY AUTO_INCREMENT,
+    nome_item VARCHAR(255) NOT NULL,
+    tier INT NOT NULL,
+    tipo VARCHAR(255) NOT NULL,
+    defesa INT NOT NULL,
+    efeito VARCHAR(255),
+    lore VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS item (
+    id BIGINT PRIMARY KEY AUTO_INCREMENT,
+    nome_item VARCHAR(255) NOT NULL,
+    tier INT NOT NULL,
+    tipo VARCHAR(255) NOT NULL,
+    efeito1 VARCHAR(255) NOT NULL,
+    efeito2 VARCHAR(255),
+    lore VARCHAR(255) NOT NULL
+);
