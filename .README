@@ -1,0 +1,78 @@
+Modelo do Json:
+
+molde pra arma
+{
+    "nome_item": "",
+    "nivel": ,
+    "tier": ,
+    "tipo": "",
+    "dano": ,
+    "efeito": "",
+    "lore": ""
+}
+
+molde para defesa
+{
+    "nome_item": "",
+    "nivel": ,
+    "tier": ,
+    "tipo": "",
+    "defesa": ,
+    "efeito": "",
+    "lore": ""
+}
+
+model para item
+{
+    "nome_item": "",
+    "nivel": ,
+    "tier": ,
+    "tipo": "",
+    "efeito1": ,
+    "efeito2": "",
+    "lore": ""
+}
+
+configurações pro chat gerar
+Vou fazer alguns itens de RPG, estruturado num mundo de doces, armas baseadas em doces, balas, açucares, chocolates, caramelo, azedinhos, doce de leite, marshmallow, etc, neste formato aqui:
+
+Nível da arma: 1 é branco, 2 é azul, 3 é verde, 4 é laranja e 5 é vermelho
+tipo de dano: mágico, físico ou hibrido
+quantidade de dado:
+- se for branco, de 5 até 15 de dano
+- se for azul, de 15 até 30 de dano
+- se for verde, 30 até 50 de dano
+- se for laranja, de 50 até 100 de dano
+- se for vermelho, de 100 até 150 de dano
+quero bastante variedade entre os danos das armas, se é de 5 até 15, use todo o espaço entre os números de acordo com o tier e nível da arma
+quando maior o tier, maior o dano/defesa, quanto menor o tier, menor o dano/defesa
+
+pra itens de defesa:
+O máximo de defesa dos itens brancos é 3 para cada item
+máximo dos itens azul é 6
+máximo dos itens verde é 10
+máximo dos itens laranja é 14
+máximo dos itens vermelhos é 18
+quero bastante variedade entre as defesas dos itens, se o máximo é 8, quero variar de 4 até 8, isso de acordo com o tier e nível do item
+de defesa.
+
+com base nisso, todos os itens tem um tipo, seguindo esta regra:
+itens de dano (não se aplica a itens mágicos, cajados, varinhas, tomos, etc)
+Trufado: explosão
+Caramelo: queimadura e paralisia
+Menta: Congelamento
+Açúcar cristalizado: Resistencia e contusão
+Chocolate derretido: dano ao longo do tempo (diabetes)
+Mel: cura (roubo de vida)
+Bala ácida: Corrosão e redução de defesa
+Marshmallow: Impacto e confusão
+
+Armaduras
+Trufado: resistência a explosão, adicional a chocolate
+Caramelo: Resistência física alta
+Menta: Resistência a congelamento
+Chocolate: Resistência elemental
+Açúcar cristalizado: Resistência a fogo e calor
+Mel: Regeneração de vida e mana
+Bala ácida: dano ao contato
+Marshmallow: Resistência hibrida

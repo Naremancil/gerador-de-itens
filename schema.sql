@@ -4,6 +4,7 @@ USE express;
 CREATE TABLE IF NOT EXISTS weapon (
     id BIGINT PRIMARY KEY AUTO_INCREMENT,
     nome_item VARCHAR(255) NOT NULL,
+    nivel INT NOT NULL,
     tier INT NOT NULL,
     dano INT NOT NULL,
     efeito VARCHAR(255),
@@ -27,3 +28,5 @@ CREATE TABLE IF NOT EXISTS item (
     efeito2 VARCHAR(255),
     lore VARCHAR(255) NOT NULL
 );
+
+-- ALTER USER 'usuario'@'localhost' IDENTIFIED WITH mysql_native_password BY 'senha';
